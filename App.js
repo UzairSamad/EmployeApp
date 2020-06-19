@@ -30,7 +30,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 
 // new work start here
-import IndexScreen from './src/screens/IndexScreen'
+import {IndexScreen} from './src/screens/IndexScreen'
 
 
 
