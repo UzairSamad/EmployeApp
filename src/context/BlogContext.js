@@ -10,10 +10,13 @@ const blogReducer = (state, action) => {
     }
 }
 
-const addBlogPosts = () => {
-    dispatch({ type: 'add_blogpost' })
+const addBlogPosts = dispatch => {
+    return () => {
+        dispatch({ type: 'add_blogpost' })
+    }
+
 }
 
 
 
-export default { Context, Provider } = createContextData(blogReducer, { addBlogPosts }, [])
+export const { Context, Provider } = createContextData(blogReducer, { addBlogPosts }, [])
