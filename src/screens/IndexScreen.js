@@ -14,7 +14,6 @@ export const IndexScreen = () => {
                     return <Text>{item.title}</Text>
                 }}
             />
-            <Button title='Delete Blog Post' onPress={deleteBlogPost} />
 
         </View>
     )
