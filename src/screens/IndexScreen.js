@@ -5,7 +5,7 @@ export default class Screen1 extends Component {
     render() {
         return (
             <View  >
-                <Text > Index.js </Text>
+                <Text > Index.jssssss </Text>
             </View>
         )
     }

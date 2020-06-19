@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { View, Text, Button } from 'react-native'
 import 'react-native-gesture-handler';
 
+// import contect blog
+import { BlogProvider } from './src/context/BlogContext'
+
 import Screen1 from './src/screens/drawer/screen1'
 import Screen2 from './src/screens/drawer/screen2'
 import Screen3 from './src/screens/drawer/screen3'
@@ -120,4 +123,10 @@ const App = () => {
 
 }
 
-export default App
+export default ()=>{
+  return(
+    <BlogProvider>
+      <App/>
+    </BlogProvider>
+  )
+}
