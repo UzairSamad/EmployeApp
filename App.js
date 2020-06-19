@@ -26,6 +26,10 @@ import { Appearance, useColorScheme, AppearanceProvider } from 'react-native-app
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 
+// new work start here
+import IndexScreen from './src/screens/IndexScreen'
+
+
 
 const Drawer = createDrawerNavigator()
 const Stack = createStackNavigator()
@@ -102,12 +106,10 @@ const App = () => {
     <AppearanceProvider>
       <NavigationContainer theme={colorScheme == 'dark' ? DarkTheme : MyTheme}>
 
-        <Drawer.Navigator>
-          <Drawer.Screen name='Home' children={createHomeStack} />
-          <Drawer.Screen name='Contact' component={Screen1} />
-          <Drawer.Screen name='Favourite' component={Screen2} />
-          <Drawer.Screen name='Settings' component={Screen3} />
-        </Drawer.Navigator>
+        <Stack.Navigator>
+          <Stack.Screen name='Main' component={IndexScreen} />
+  
+        </Stack.Navigator>
       </NavigationContainer>
 
     </AppearanceProvider>
